@@ -1,0 +1,67 @@
+Sujets et problématiques des articles
+
+Flandreau-TiesDivideNetwork-2005
+ing order: Can we map the geography in the international monetary system?; Can we explain it?;
+ and Does it matter? This article deals solely with the first question, in
+ the context of the late-nineteenth-century international monetary sys-
+ tem
+
+  This article started from the premise that any country's adjustment
+ mechanism depends heavily on the degree of the international circula-
+ tion of its currency. We identified an indicator of international liquidity,
+ captured by a dichotomous variable reflecting the existence of direc-
+ tional relations between countries' financial markets. Such variables are
+ amenable to modem network analysis techniques, and we provided a
+ procedure for automatically identifying "core" and "peripheral" nations
+ around 1890-1910.
+ This procedure yielded a striking result. The monetary order of the
+ late nineteenth century is best described as having been made up of at
+ least three groups, rather than the two groups generally referred to. Spe-
+ cifically, we found, between Peter Lindert's "key currencies" (pound
+ sterling, franc, and mark), and the currencies in Alec Ford's "periphery"
+ (the Argentine peso being the archetype), a middle class, mostly made
+ up of the currencies of European nations, but through which the United
+ States dollar passed on its way to the top. Alternatively, if only two
+ groups are to be identified, then we are bound to call "core" nations a
+ much broader group than is conventionally considered. Most strikingly,
+  such countries as Italy, Russia, Spain, or Austria-Hungary were defi-
+ nitely not peripheral. Their currencies enjoyed a regional circulation and
+ were known to bankers in a number of leading European centers.
+ We hope that these findings will provide a firmer basis for future em-
+ pirical work seeking to contrast economic performances in alternative
+ groups of countries. The classifications reported in Table 5 can motivate
+ more rigorously the use of separate regressions for different groups.
+ Similarly, the indices of centrality that we constructed can be used as
+ controls of the influence of centrality in econometric work. For the con-
+ venience of future research, the readers can find in Appendix Table 1
+ two brands of monetary geography indices.
+ Future research will need to explain the emergence of the structure
+ we identified, and to measure carefully how much it did matter. The
+ first question is Terra Incognita. On the second issue, research is also
+ needed, but there is already evidence that the structure identified did
+ matter. For instance, we know that "core" and "intermediate" countries
+ were able to circulate debts denominated in their own currency on for-
+ eign markets, whereas members of the periphery were not.33 Similarly,
+ recent research has reported evidence of a greater contribution of ex-
+ change rate movements to external adjustments in countries belonging
+ to our "periphery"-unsurprisingly given that they could not borrow so
+ easily abroad.34 More work is needed to go beyond these general re-
+ marks. But we believe our findings might open new perspectives. These
+ perspectives should, at the very least, have the potential to free us from
+ the conventional reference, when it comes to explaining the pre-1914
+ international monetary order, to those famous "rules of the game" of
+ which it is only known that t they never existed.
+
+
+Flandreau-EmpiricsOfInternationalCurrencies-2009
+These theories have three distinct features: they suggest that the emergence
+of international currencies is predicated on the existence of transaction costs; they
+emphasise the role of strategic externalities and they usually predict strong persistence
+in monetary leadership. Our aim is to provide new evidence on the empirical validity of
+these insights.
+
+Idées de problématique :
+- En lien avec les colonies
+
+
+Les techniques vues en cours, c'est de la visualisation et de la description de caractéristiques globales et locales des graphes donc on est pas obligé de faire des régressions linéaires nous-mêmes. On peut illustrer leur résultats par de belles visualisations et utiliser d'autres caractéristiques des graphes pour valider ou remettre en cause leurs résultats ?
