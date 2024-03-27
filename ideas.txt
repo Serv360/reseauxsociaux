@@ -61,7 +61,9 @@ in monetary leadership. Our aim is to provide new evidence on the empirical vali
 these insights.
 
 Idées de problématique :
-- En lien avec les colonies
-
-
-Les techniques vues en cours, c'est de la visualisation et de la description de caractéristiques globales et locales des graphes donc on est pas obligé de faire des régressions linéaires nous-mêmes. On peut illustrer leur résultats par de belles visualisations et utiliser d'autres caractéristiques des graphes pour valider ou remettre en cause leurs résultats ?
+- À quel groupe appartiennent les colonies (key, intermediary, periphery)
+- Est-ce que les colonies sont plus ou moins connectés aux autres pays par 
+rapport aux autres pays des groupes intermediary ou de la périphérie ?
+- Comment évolue la densité, la polarisation des échanges/marchés de devises au cours des trois années ?
+- Est-ce que la diminution du PIB des pays au cours des années 1890-1910 est liée à son nombre de colonies, 
+à ses caractéristiques locales dans le graphe des marchés de devise et dans le graphe des échanges bilatéraux ?
