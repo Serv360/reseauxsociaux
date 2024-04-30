@@ -1,0 +1,265 @@
+\documentclass[8pt]{extarticle}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{dsfont}
+\usepackage{picture}
+\geometry{hmargin=1cm,vmargin=1.1cm} % Pour les marges
+\usepackage{eurosym}
+
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{biblio.bib} %Import the bibliography file
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Cadres de couleur
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\newcommand{\important}[2]{\begin{tcolorbox}[colback=grey!5!white,
+                  colframe=grey, %Plus le chiffre est bas. plus la 1ere couleur est faiblement présente.
+                  title= #2
+                 ]\begin{center}#1\end{center}\end{tcolorbox}}
+
+\newcommand{\importantNonCentre}[2]{\begin{tcolorbox}[colback=grey!5!white,
+                  colframe=grey, %Plus le chiffre est bas. plus la 1ere couleur est faiblement présente.
+                  title= #2
+                 ]#1\end{tcolorbox}} % IDEM sans centrage du texte
+
+\newcommand{\importantnormal}[1]{\begin{tcolorbox}[colback=grey!5!white,
+                  colframe=grey, %Plus le chiffre est bas. plus la 1ere couleur est faiblement présente.
+                  title= 
+                 ]#1\end{tcolorbox}}
+
+
+\title{\vspace{-1.5cm}Intégration économique des pays colonisés au tournant du XXe siècle par l'étude des marchés de devises}
+
+\author{BASA Benjamin, HENNET Thibaud \& THOMAS Loïc}
+
+% \author[Hennet, Basa, Thomas] {Thibaud Hennet 
+% \\Benjamin Basa\texorpdfstring{\\ Thomas Lo{\"i}c}{}
+% }
+\date{Avril 2024}
+
+\begin{document}
+\maketitle
+
+% \begin{abstract}
+%     Blablabla
+% \end{abstract}
+
+
+% \vspace{50pt}
+
+
+\setcounter{tocdepth}{0}
+% \tableofcontents 
+
+
+% \important{Là on peut écrire des machins sympas}{Un premier bloc de trucs}
+
+% \importantNonCentre{Là aussi des machins sympas}{Un deuxième bloc de trucs non centré ce coup-ci}
+
+% \importantnormal{Un troisième bloc, sans titre}
+
+
+%Pour citer un article : \cite{flandreau_empirics_2009}
+
+%\newpage
+\section{Introduction \& revue de littérature} %%%%%%%%%%%%%%%%%%%
+
+Les questions liées à l'intégration économiques des anciennes colonies sont récurentes dans le débat public, notamment dans les pays anciennement colonisateurs. Elles ont par exemple données lieu à l'apparition d'un champ de recherche dans les années 1980 aux Etats-Unis et en Europe appelé les \textit{postcolonial studies} (ou études post-coloniales). Les auteurs et autrices de ce champ de recherche s'intéressent notamment au fait colonial dans son ensemble, en tant que mécanisme de domination, qu'un groupe colonisateur exerce sur un groupe colonisé. L'approche matérialiste de ce courant se penche notamment sur les conditions matérielles des anciennes colonies, et aux conséquences de la colonisation sur leurs situations socio-économiques actuelles. \\
+La littérature post-colonialiste a mis en évidence des effets persistents du colonialisme sur la structure politique, culturelle et économique des pays concernés. Homi Bhabha \cite{bhabha2012location} utilise ainsi la métaphore de pays mineurs et de pays majeurs, signifiant que les pays coloniaux n'ont pas encore atteints l'âge adulte en s'émancipant de leur Métropôle. De leurs côté, Coly et al \cite{article} voient dans cette absence de maturité politique l'une des causes de difficultés persistentes pour la constitution d'un Etat centralisé en Afrique.\\
+
+\importantnormal{Notre étude s'inscrit dans une veine de la littérature qui cherche à décrire plus précisément l'impact de la colonisation sur l'intégration du systéme de devises mondiales. Les travaux de Marc Flandreau et Clemens Jobst adoptent une approche quantitative d'analyse des réseaux pour caractériser par des paramèteres standards l'isolement des colonies par rapport au centre.}
+
+Dans leur premier article, publié en 2005 \cite{noauthor_ties_nodate}, Marc Flandreau et Clemens Jobst proposent une cartographie du système monétaire international entre 1890 et 1910. Pour cela, ils identifient un indicateur de liquidité internationale, autrement dit, l'existence (ou non) de relations directionnelle entre les marchés financiers des pays, et produisent des indices de centralité des monnaies des pays étudiés. Ils aboutissent notamment à la formation de trois groupes de pays : les pays centraux, utilisant ce que les auteurs appellent des "monnaies clés" (Livre Sterling, Franc ou Mark), les pays intermédiaires, et les les pays périphériques, utilisant des monnaies moins utilisées à l'international (Peso argentin par exemple). Le schéma récapitulatif est présent en Figure \ref{schema_systeme_monetaire_2005}.  Marc Flandreau et Clemens Jobst continuent leurs recherches dans un second article publié en 2009 \cite{flandreau_empirics_2009}, ils montrent notamment que l'émergence des monnaies internationales repose sur l'existence de coûts de transaction, soulignent le rôle des externalités stratégiques et prédisent généralement une forte persistance du leadership monétaire. Cette approche quantitative par réseaux économiques laisse cependant de côté le sort spécifique des anciennes colonies.
+
+
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[trim=0 0.5cm 0 0.5cm, clip, width=0.4\textwidth]{Figures/Figure_article_2005_schema.PNG}
+    \caption{Schéma du système monétaire mondial en 1900. Source : Flandreau et Jobst 2005 \cite{noauthor_ties_nodate}.}
+    \label{schema_systeme_monetaire_2005}
+\end{figure}
+
+
+
+\section{Problématique \& données}
+
+Il apparaît ainsi que l'utilisation de méthodes de science des réseaux pour l'étude de l'inclusion, ou, au contraire, de l'exclusion des anciennes colonies dans le système monétaire mondial au tournant du $19^{eme}$ siècle n'a encore jamais été traité.
+
+\importantNonCentre{Une fois reconstruits les trois groupes de pays identifiés par Marc Flandreau et Clemens Jobst (\textit{key, intermediary, periphery}), ce rapport se propose tout d'abord de situer la place des anciennes colonies au sein de ces groupes, puis d'étudier les caractéristiques de ces dernières, notamment en ce qui concerne le nombre de connexions qu'elles entretenaient entre 1890 et 1910 avec les autres pays de leurs groupes.}{Problématiques}
+
+Les données dont nous disposons sont disponibles librement, et ont été construites par Marc Flandreau et Clemens Jobst. Ce sont elles qui ont servi de base à leurs recherches. Elles se situent à l'échelle des pays, et contiennent notamment l'ensemble des circulations de devises au niveau international entre 1890 et 1910, des variables indicatrices de l'existence d'un marché actif de la monnaie du pays A dans le pays B, pour tous les pays, mais aussi des variables économiques par pays (dette, PIB, etc.) et des variables par paires de pays (commerce bilatéral, distance, etc.). Enfin, elle contient environ 45 pays et devises monétaires. \\
+
+\importantNonCentre{Afin d'apporter des éléments de réponse à la problématique nous avons décidé de situer dans un premier temps les colonies dans les groupes proposés par Marc Flandreau et Clemens Jobst. Ensuite, nous comparons les caratéristiques socio-économiques des colonies avec les autres pays. Puis nous faisons le même travail pour certaines caractéristiques de réseau.}{Plan détaillé}
+
+
+\section{Résultats}
+
+\subsection{Dans quel groupe se situent les colonies ?}
+
+\label{sec:groupes}
+
+Si on retient les classifications de Marc Flandreau et Clemens Jobst, les colonies se situent toujours dans la périphérie, que ce soit en 1890, en 1900 ou en 1910. Pour l'année 1900, ceci est particulièrement visible sur la Figure \ref{graphe_gephi}.
+
+La Figure \ref{graphe_gephi} propose une visualisation sous forme de graphe de la présence des marchés actifs de devises étrangères dans chacun des 45 pays étudiés en 1900. Une flèche code l'existence dans le pays de départ d'un marché de la devise du pays d'arrivée. Par exemple, il y a un marché de francs belges - BEL - en Suède - SWE (À gauche sur la Figure \ref{graphe_gephi}), mais il n'y a pas de marché de couronnes suédoises en Belgique. La couleur indique le groupe (\textit{Core} : vert, \textit{Intermediary} : orange, \textit{Periphery} : bleu). La taille est proportionnelle au \textit{in\_degree}, c'est-à-dire pour un pays, au nombre de pays qui possèdent un marché de sa devise. Les colonies sont précisées en rouge. Les flèches rouges enfin désignent alors le pays colonisateur\footnote{Il n'y a pas de flèche rouge pour les Philippines car elles ne possèdent pas de marché de dollars en 1900 bien que les Etats-Unis ait pris le contrôle du pays en 1898, succédant aux espagnols.}. \\
+
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[scale = 0.85]{Figures/graphe_size_indegree_group1900_colony.png}
+%     \caption{Aperçu du réseau des marchés de devises en 1900.}
+%     \label{graphe_gephi}
+% \end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.43\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/graphe_size_indegree_group1900_colony.png}
+        \caption{Réseau des marchés de devises en 1900.}
+        \label{graphe_gephi}
+    \end{subfigure}
+    \hfill % Add some horizontal space between the subfigures
+    \begin{subfigure}{0.56\textwidth}
+        \centering
+        \includegraphics[trim=3.5cm 1.1cm 3cm 0, clip, width=\textwidth]{Figures/degree_1900.png}
+        \caption{Comparaison des \textit{in\_degrees} et \textit{out\_degree} des 45 pays de notre jeu de données.}
+        \label{comparaison_degree}
+    \end{subfigure}
+    \caption{}
+    \label{fig:side_by_side}
+\end{figure}
+
+La Figure \ref{comparaison_degree} présente la répartition des \textit{in\_degree} et des \textit{out\_degree} de tous les pays. Nous avons indiqué à nouveau les colonies en rouge. En terme de degré entrant (en bleu), les trois pays du \textit{Core} (Royaume-Uni, France et Allemagne), se démarquent nettement. Les colonies sont toutes dans la deuxième seconde avec un degré entrant le plus souvent égal à zéro, significiant qu'aucun autre pays n'a un marché de leur devise. On note cependant deux exceptions : Hong Kong et Inde, qui profitent d'une interconnexion asiatique dense et visible sur la partie droite de la Figure \ref{graphe_gephi}. En ce qui concerne l'\textit{out\_degree}, il est faible mais non nul. Toutes les colonies ont au moins un marché des devises du pays colonisateur (sauf les Philippines). À nouveau Hong Kong et l'Inde font figure d'exception. En particulier Hong Kong a un \textit{out\_degree} plus élevé. Outre l'interconnexion asiatique forte, cela est probablement dû à son emplacement et son statut particuliers qui permettent aux pays occidentaux le commerce avec la Chine et l'Asie.
+
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[trim=0 1.1cm 0 0, clip, width=0.7\textwidth]{Figures/degree_1900.png}
+%     \caption{Comparaison des in\_degrees et out\_degree des 45 pays de notre jeu de données.}
+%     \label{comparaison_degree}
+% \end{figure}
+
+\subsection{Comparaison des caractéristiques socio-économiques des colonies avec les autres pays de la périphérie}
+
+Afin de comparer les les pays colonisés aux autres pays du groupe \textit{periphery}, on régresse un ensemble d'indicateurs macroéconomiques disponibles sur une indicatrice valant $1$ si le pays est une ancienne colonie, et $0$ sinon. Les regressions sont faites à l'échelle du pays, et en 1900. Les résultats détaillés sont disponibles dans la Table \ref{table: resultats_regressions_lin}. 
+
+\bigbreak
+De manière générale, on note que seuls deux indicateurs sont significativement expliqués par le fait d'être une colonie : le PIB réel et le ratio rendement de l'or sur le marché secondaire/revenus du gouvernement. Les coefficients associés aux deux indicateurs sont négatifs, indiquant qu'être une ancienne colonie est associée avec un plus faible PIB réel et un plus faible rendement de l'or, le dénominateur permettant d'ajouter un contrôle par revenus du gouvernement. Enfin, le fait que le PIB réel soit significativement expliqué par le fait d'être une ancienne colonie, mais que le log du PIB par tête ne le soit pas indique que le faible nombre de régressions significatives peut sans doute s'expliquer par le faible pouvoir statistiques des régressions, mais aussi par de nombreux effets hétérogènes.
+
+\bigbreak
+Cette dernière explication nous apparaît comme plus cohérente, car, si l'on se restreint aux pays du groupe \textit{periphery}, alors les mêmes régressions font ressortir trois indicateurs (et non plus deux) significativement expliqués par le fait d'être une ancienne colonie (voir Table \ref{table: resultats_regressions_lin_groupe_C} pour les résultats détaillés). En particulier, on note l'importance de l'index de démocratie, mis en place par Vanhanen en 2000 \cite{vanhanen_new_2000}. Concernant la construction de cet index, il reflète la qualité démocratique du système politique mis en place dans un pays : plus l'index est élevé, plus le pays est proche d'une démocratie parfaite. Dans notre jeu de données, la France a plus plus haut index (11.87) et 19 pays (Chine, Colombie, Cuba, Equateur, Egypte, etc.) ont un index de 0.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{r|r|l}
+  \hline
+    Variable & Estimate & pvalue \\ 
+  \hline
+ Real gdp & -1.15 & 0.06 \\ 
+  Ratio : secondary market yield for gold/gvt revenues & -1.94 & 0.07 \\ 
+  Tot trade & -1.18 & 0.39 \\ 
+  Index of democracy & 0.91 & 0.48 \\ 
+  Market rate for 3 month lending & 0.63 & 0.50 \\ 
+  Log real gdp per capita & -0.14 & 0.56 \\ 
+  Ratio : gvt dept/dvt revenues & -0.79 & 0.61 \\ 
+   \hline
+\end{tabular}
+\caption{Résultats des régression pour toutes les variables disponibles. En 1900 et sur l'ensemble des pays. Lecture : le fait d'être une colonie est significatif à $6\%$ pour expliquer le \textit{Real gdp}, et le coefficient associé est $-1.15$. Autrement dit, être une colonie est associé au fait de diminuer de $1.15$ le \textit{Real gdp}.}
+\label{table: resultats_regressions_lin}
+\end{table}
+
+
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{r|r|l}
+  \hline
+    Variable & Estimate & pvalue \\ 
+  \hline
+ Index of democracy & 2.24 & 0.01 \\ 
+ Tot trade & 0.61 & 0.01 \\ 
+  Ratio : secondary market yield for gold/gvt revenues & -2.88 & 0.02 \\ 
+  Real gdp  & -0.49 & 0.37 \\ 
+  Log real gdp per capita & 0.10 & 0.65 \\ 
+  Market rate for 3 month lending  & -0.40 & 0.67 \\ 
+  Ratio : gvt dept/dvt revenues  & -0.52 & 0.76 \\
+   \hline
+\end{tabular}
+\caption{Résultats des régression pour toutes les variables disponibles. En 1900 et uniquement sur les pays du groupe \textit{periphery}. Lecture : le fait d'être une colonie est significatif à $1\%$ pour expliquer l' \textit{Index of democracy}, et le coefficient associé est $2.24$. Autrement dit, être une colonie est associé au fait d'augmenter de $2.24$ le \textit{Index of democracy}.}
+\label{table: resultats_regressions_lin_groupe_C}
+\end{table}
+
+\bigbreak
+Il apparait donc que le fait d'être une ancienne colonie explique certains facteurs macroéconomiques ou sociétaux, mais que la présence d'effets hétérogènes complique l'analyse d'une approche économétrique. En particulier, en comparant les pays colonisés à l'ensemble des pays, alors ceux-ci ont un PIB réel plus faible. Mais si on se restreint aux pays du groupe \textit{periphery}, alors les pays colonisés se caractérisent notamment par un meilleur système démocratique. Ce dernier résultat, même s'il peut paraître surprenant, s'explique notamment par le fait que certains pays comme le Canada et la Nouvelle-Zélande bien qu'étant des anciennes colonies, ont acquis une  autonomie précoce (respectivement 1867, et 1840) et ont donc des systèmes démocratiques bien développés en 1900.
+
+%s'explique surtout par le fait que le Canada et la Nouvelle-Zélande bien qu'étant des anciennes colonies, avaient, du fait de leur indépendance précoce (respectivement 1867, et 1840), des systèmes démocratiques développés en 1900.
+
+\subsection{Comparaison des caractéristiques de réseau des colonies avec les autres pays de la périphérie}
+
+Dans la Partie \ref{sec:groupes}, nous avons déjà située les colonies parmi l'ensemble des 45 pays en fonction de leurs degrés entrants et sortants. Une autre mesure pertinente pour comprendre leur intégration est le local clustering coefficient, le ratio du nombre de connexions existant entre les voisins d'un noeud sur le nombre total de connexions possibles entre eux. Il estime ainsi la cohésion des voisins d'un noeud. Les résultats sont présentés en Figure \ref{clustering_coefficient}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[trim=0 1.25cm 0 1.25cm, clip, width=0.55\textwidth]{Figures/clustering_coefficient_evolution.png}
+    \caption{Evolution du clustering coefficient total et within moyen au sein des quatre groupes : \textit{Core}, \textit{Intermediary}, \textit{Periphery} non colonies et \textit{Periphery} colonies.}
+    \label{clustering_coefficient}
+\end{figure}
+
+On note ainsi que, à l'exception du \textit{global clustering coefficient} pour les pays intermédiaires, il n'y a pas d'évolution temporelle notable des coefficients entre 1890 et 1910. L'augmentation importante du \textit{global clustering coefficient} des pays intermédiaires écrase en fait toute l'augmentation de l'interconnexion des marchés de devises : les nouveaux pays très connectés aux autres quittant le groupe périphérique pour rejoindre le groupe intermédiaire dans la classification de Marc Flandreau et Clemens Jobst.
+
+De plus, concernant les éventuelles différences de \textit{average local clustering coefficient} (ALCC) et de \textit{within average local clustering coefficient} (wALCC) entre les colonies et les autres pays du groupe périphérique, on peut noter que les pays de la périphérie sont principalement connectés aux pays du centre, qui forment eux-même un graphe complet (voir Figure \ref{schema_systeme_monetaire_2005}). Cela explique un ALCC élevé des pays du groupe \textit{Periphery} sans les colonies. Cependant les colonies qui appartiennent au groupe \textit{Periphery} ont un ALCC plus faible que les pays du groupe \textit{Intermediary}, ce qui peut s'expliquer par le fait que deux colonies sont connectées seulement à un unique pays :: le pays colonisateur. Leur \textit{local clustering coefficient} (LCC) vaut donc par convention 0.
+
+Enfin, si on s'intéresse maintenant à l'ALCC à l'intérieur des quatre classes construites - qu'on nomme wALCC - les résultats s'inversent : le wALCC des colonies est plus grand que le wALCC des autres pays du groupe \textit{Periphery}.
+Cela s'explique à nouveau par le fait que les pays périphériques sont très peu connectés entre eux. En enlevant les pays centraux et intermédiaires, de nombreux pays périphériques ne sont plus du tout connectés, et ont donc un LCC nul. Là encore, les colonies se distinguent, car celles qui sont situées en Asie sont fortement connectées entre elles (Hong Kong, l'Inde, Singapour et les Philippines).
+
+\subsection{La robustesse du système monétaire international}
+
+Ainsi, le système de devises semble être un système multipolaire avec quelques noeuds à fort degré dont l'importance est cruciale pour relier l'ensemble des pays. Mais la question de la robustesse du réseau étudié se pose.
+\newline
+Pour quantifier la robustesse de ce réseau, il est possible de l'"attaquer" en retirant fictivement certains noeuds fin de juger de son état de fragmentation après ces retraits. Pour cela, un bon proxy consiste à compter la fraction de noeuds qui restent connectés. Nous considérons deux types d'attaques: des attaques aléatoires, qui retirent des noeufs sélectionnés au hasard, et des attaques ciblées sur les noeuds à hauts degrés.
+
+Il est ainsi possible de tracer la courbe représentant la taille relative de la plus grande composante connectée du réseau restant, en fonction de la proportion de noeuds retirés. Cette courbe présente notamment l'avantage d'être facilement interprétable. En effet, plus le réseau étudié est robuste, plus elle est proche d'une bissectrice décroissante $y=-x$ : la taille de la plus grande composante connectée dans le réseau décroit avec la proportion de noeuds retirés, mais uniquement du fait du retrait des noeuds en question. Au contraire, moins le réseau étudié est robuste, plus cette courbe décroit rapidement avec le nombre de noeuds retirés.
+
+
+% Lorsque l'on enlève un plus en plus grand nombre de noeuds, on peut tracer une courbe à l'interprétation intuitive. Plus le réseau est très robuste, plus la courbe se rapproche de la bissectrice -x; le nombre de noeuds reliés dans le réseau baisse, mais cet effet mécanique n'est que le résultat d'avoir enlever certains noeuds. Au contraire, le réseau est peu robuste si le nombre de noeuds reliés décroît beaucoup plus vite que ce benchmark.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[trim=0 1.5cm 0 1.41cm, clip, width=0.65\textwidth]{Figures/robust_test.PNG}
+    \includegraphics[trim=0 1.25cm 0 1.25cm, clip, width=0.55\textwidth]{Figures/robust_test.PNG}
+    \caption{Taille relative de la plus grande composante connectée du réseau restant, en fonction de la proportion de noeuds retirés, dans le cas de retrait aléatoires (orange) ou ciblés (bleu).}
+    \label{fig: test_robusteness}
+\end{figure}
+
+La courbe \ref{fig: test_robusteness} indique ainsi que le réseau étudié résiste plutôt correctement à des attaques aléatoires, mais est très sensibles aux attaques ciblées sur les pays les plus connectés. Ceci est donc cohérent avec les observations précédentes, et notamment le fait que l'\textit{average clustering coefficient} est faible des pays du \textit{Core}, et que les pays tiers ne sont reliés que par l'intermédiaire de ces noeuds centraux.
+
+% On constate dans la figure ci-dessus que le réseau résiste bien en moyenne aux attaques aléatoires mais est nettement plus sensible au fait d'enlever ses hubs. Ce fait empirique est cohérent avec le average clustering coefficient faible des pays du coeur. Les pays tiers ne sont reliés que par l'intermédiaire de ces noeuds centraux.
+
+\section{Conclusions et perspectives} %%%%%%%%%%%%%%%%%%%
+
+Ainsi, notre étude utilise une base de données sur les échanges de devises au début du 20ème siècle pour caractériser l'intégration dans le système monétaire de chaque pays. Nous revisitons certains résultats obtenus par Flandreau et Jost en répliquant et en complétant leur analyse pour décrire l'isolement de certains pays du système mondial de devises et en particulier des colonies.
+\newline
+Cette relation accroît potentiellement la dépendance des colonies à leur Métropôle en l'empêchant de s'émanciper à travers le commerce international. Elle est une forme fantômatique et atténué des interdictions de commercer avec d'autres pays qui existainet au XVIIème siècle.
+\newline
+Outre, les effets nuisibles pour leur développement économique propre, nous montrons aussi que cette évolution "path-dependent" a potentiellement créé un système de devises surdépendant vis à vis de certaines places de changes qui est fragile quant à son interconnexion globale.
+
+Ce travail pourrait notamment être approfondi, par exemple en étudiant une subdivision du groupe \textit{Periphery} en quatre sous-groupes : les pays européens (pays du nord, Portugal et Grèce), les anciennes colonies du XVIe-XIXe siècles qui ont gagné leur indépendance (pays d'amérique du sud notamment), les colonies qui n'ont pas encore obtenu leur indépendance\footnote{en l'occurence ici seulement les colonies britanniques et américaines}, et enfin deux pays asiatiques qui n'ont jamais été colonisées dans leur totalité par des occidentaux : la Chine et le Japon. En effet, les régressions proposées plus haut semblent indiquer la présence d'effets hétégorènes, et une subdivision plus fine du groupe le plus important et le plus divers de pays (le groupe\textit{Periphery} donc) pourrait apporter un éclairage complémentaire pertinent.
+
+
+
+%Perspective, lien avec le papier, résultats principaux
+
+% (((Relativiser résultats : dans la périphérie, il y a quatre groupes de pays : les pays européens (pays du nord, Portugal et Grèce), les anciennes colonies du XVIe-XIXe siècles qui ont gagné leur indépendance (pays d'amérique du sud notamment), les colonies qui n'ont pas encore obtenu leur indépendance, en l'occurence ici seulement les colonies britanniques et américaines et enfin deux pays asiatiques qui n'ont jamais été colonisées dans leur totalité par des occidentaux : la Chine et le Japon.)))
+
+%\newpage
+\printbibliography
+
+
+\end{document}
